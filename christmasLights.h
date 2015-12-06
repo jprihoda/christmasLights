@@ -1,7 +1,8 @@
 /***************************************************************************
  *                                                                         *
- *   Mini library for particular Christmas lights project                  *
- *   (c) 2012 Jan Prihoda                                                  *
+ *   Mini library for particular Christmas lights                          *
+ *   project based on TLC59731                                             *
+ *   (c) 2015 Jan Prihoda                                                  *
  *                                                                         *
  *                                                                         *
  ***************************************************************************
@@ -35,6 +36,17 @@ class christmasLights {
 
     // Animations
 
+    void allLightsFallDown(int count, int delayMs);
+    void randomLightToLimit(int limit, int delayMs);
+    void randomLight(int limit, int delayMs);
+    void breath(int limit);
+    void stripeRotateWithTail(int count, int delayMs);
+    void stripeRotateToFull(int grayScale, int delayMs);
+    void rowFallDown(int grayScale, int delayMs);
+    void rowFallDownToFull(int grayScale, int delayMs);
+    void rowFallDownToClear(int grayScale, int delayMs);
+    void lightEachLedByRownAndColumn(int grayScale, int delayMs);
+    
 
     // Direct pattern manipulation
     void writePixelMap(int column, int row, byte grayScale);
